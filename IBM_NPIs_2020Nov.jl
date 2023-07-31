@@ -3,7 +3,7 @@
     IBM Julia language code developed by Min-Kyung Chae (in NIMS).
     Multi-thread code:     julia --threads 2 filename.jl
 
-    Julia version: 19
+    Julia version: 1.9.2
 
     Individual-based model (IBM) to simulate the spread of COVID-19 in South Korea
 
