@@ -1,8 +1,9 @@
 """ 
     2023-08-01
     IBM Julia language code developed by Min-Kyung Chae (in NIMS).
-    Multi-thread code
-    julia --threads 2 filename.jl
+    Multi-thread code:     julia --threads 2 filename.jl
+
+    Julia version: 19
 
     Individual-based model (IBM) to simulate the spread of COVID-19 in South Korea
 
@@ -12,13 +13,13 @@
     Level 3 : private gathering size is maximum 4 in the entire country
 """
 
-using Base.Threads
-using DataFrames, CSV, StatsBase, Statistics, Distributions
+using Base.Threads 
+using DataFrames, CSV, StatsBase, Statistics, Distributions # DataFrames(v1.6.1), CSV(v0.10.11), StatsBase(v0.33.21), Statistics(v1.9.0), Distributions(v0.25.98)
 using Random
-using Plots, Images
-using RData
-using NaNMath
-import CodecBzip2
+using Plots, Images # Plots(v1.38.17), Images(v0.25.3)
+using RData # v1.0.0
+using NaNMath # v1.0.2
+import CodecBzip2 # v0.7.2
 
 
 function Relative_Infectiousness(std_, rngs_)
