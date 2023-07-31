@@ -83,7 +83,7 @@ function Friends_Meeting_Number_Constraint_Lv3(n_, rngs_)
 end
 
 function Setting_Group_Education_Rotation(df_, group1_, group2_, group3_, group4_, rngs_)
-    # Only 30% of the classes in each region go to school (1/3 of them go to school) > They are assigned a group to go to school.
+    # Only 1/3 of the classes in each region go to school (1/3 of them go to school) > They are assigned a group to go to school.
     # It's very time consuming because we have to go through 250 region, but we only need to do it once.
 
     k = 1;     school_group_ = [];
